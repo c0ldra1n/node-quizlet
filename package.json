@@ -1,19 +1,23 @@
 {
-  "name": "quizlet",
-  "version": "1.0.0",
-  "description": "Quizlet 2.0 API Wrapper for NodeJS",
-  "main": "quizlet.js",
-  "scripts": {
-    "test": "npm test.js"
-  },
-  "keywords": [
-    "quizlet",
-    "api"
-  ],
-  "author": "c0ldra1n",
-  "license": "MIT",
-  "dependencies": {
-    "nanoid": "^1.2.4",
-    "request": "^2.88.0"
-  }
+	"name": "node-quizlet",
+	"version": "1.0.0",
+	"description": "Quizlet 2.0 API Wrapper for NodeJS",
+	"main": "quizlet.js",
+	"scripts": {
+		"test": "npm test.js"
+	},
+	"keywords": [
+		"quizlet",
+		"api"
+	],
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/c0ldra1n/node-quizlet"
+	},
+	"author": "c0ldra1n",
+	"license": "MIT",
+	"dependencies": {
+		"nanoid": "^1.2.4",
+		"request": "^2.88.0"
+	}
 }
