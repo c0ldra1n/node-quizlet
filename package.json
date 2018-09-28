@@ -1,6 +1,6 @@
 {
 	"name": "node-quizlet",
-	"version": "1.0.0",
+	"version": "1.0.0-1",
 	"description": "Quizlet 2.0 API Wrapper for NodeJS",
 	"main": "quizlet.js",
 	"scripts": {
