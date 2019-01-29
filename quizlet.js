@@ -35,8 +35,14 @@ class Quizlet {
 
 		this.set.get = function(setID){
 			return new Promise(function(resolve, reject){
+				var requrl;
+				if(typeof(setID) == 'string' || typeof(setID) == 'number'){
+					requrl = `https://api.quizlet.com/2.0/sets/${setID}`;
+				}else{
+					requrl = `https://api.quizlet.com/2.0/sets?set_ids=`+setID.join(',');
+				}
 				request({
-					url:`https://api.quizlet.com/2.0/sets/${setID}`,
+					url:requrl,
 					method:'GET',
 					headers:{Authorization: `Bearer ${qz.access_token}`}
 				}, function(error, res, body){
@@ -52,6 +58,7 @@ class Quizlet {
 						reject(err);
 					}
 				});
+
 			});
 		};
 
